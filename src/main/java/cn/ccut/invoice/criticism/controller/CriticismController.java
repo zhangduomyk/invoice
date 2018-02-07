@@ -61,7 +61,7 @@ public class CriticismController {
     /**
      * 添加单数据
      *
-     * @param criticismCustom
+     * @param
      * @param request
      */
     @RequestMapping("/insertOneRecord")
@@ -69,6 +69,7 @@ public class CriticismController {
         try {
             criticismService.insertOneRecord(criticismCustom);
         } catch (Exception e) {
+
             return "添加失败！";
         }
         return "添加成功";

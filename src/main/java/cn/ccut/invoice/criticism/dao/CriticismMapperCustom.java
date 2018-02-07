@@ -7,7 +7,6 @@ import java.util.List;
 public interface CriticismMapperCustom extends CriticismMapper {
     /**
      * 返回对应用户的总记录数
-     *
      * @return
      */
     public int selectAllCount();

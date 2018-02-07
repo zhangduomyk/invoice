@@ -93,7 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<dt><i class="Hui-iconfont">&#xe622;</i>用户体验<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="<c:url value="/jsps/criticism/cri-list.jsp"/>" data-title="评论列表" href="javascript:void(0)">评论列表</a></li>
+					<li><a data-href="<c:url value="/criticism/pageRecord"/>" data-title="评论列表" href="javascript:void(0)">评论列表</a></li>
 					<li><a data-href="feedback-list.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
 			</ul>
 		</dd>

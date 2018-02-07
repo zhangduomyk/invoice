@@ -27,30 +27,34 @@
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户体验 <span class="c-gray en">&gt;</span> 评论列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container indexPosotion">
     <div class="cl pd-5 bg-1 bk-gray mt-20" style="height: 42px;">
-        <div class="text-c"> 日期范围：
-            <input name="startDate" type="text" id="datemin" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}' })" class="input-text Wdate" style="width:120px;">
-            <input name="endDate" type="text" id="datemax" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d' })" class="input-text Wdate" style="width:120px;">
-            <input name="query" type="text" class="input-text" style="width:250px" placeholder="名称" id="" >
-            <button type="button" onclick="submitQuery()" class="btn btn-success radius"  name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
-
-
+        <div class="text-c">
+            <span class="l">
+                <a href="javascript:;" onclick="dataDdd('发表评论','jsps/criticism/add-cri.jsp','800','400')" class="btn btn-primary radius">
+                    <i class="Hui-iconfont">&#xe600;</i> 发表评论</a></span>
             <span class="r">第<strong><span id="spanId-1"></span></strong>页/共<strong id="spanId-2"><span></span></strong>页</span> </div>
     </div>
-
     <div class="mt-20">
-
         <table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
             <thead>
             <tr class="text-c">
-                <th width="170">用户</th>
-                <th >评论</th>
-                <th width="170">日期</th>
+                <th width="100">用户</th>
+                <th>评论</th>
+                <th width="200">日期</th>
             </tr>
             </thead>
-            <tbody id="tbodyId"></tbody>
+            <tbody id="tbodyId">
+            <c:forEach var="list" items="${pageBean.list}">
+                <tr class="text-c">
+                    <td>${list.uid}</td>
+                    <td>${list.comment}</td>
+                    <td>${list.date.toLocaleString()}</td>
+                </tr>
+            </c:forEach>
+            </tbody>
         </table>
 
-        <div class="pageDiv" id="ulId"></div>
+        <div class="pageDiv" id="ulId">
+        </div>
 
     </div>
 </div>
@@ -67,8 +71,6 @@
 <script type="text/javascript" src="static/laypage/1.2/laypage.js"></script>
 <script type="text/javascript" src="static/myscript/data_js.js"></script>
 <script type="text/javascript">
-
-    //格式化时间函数
     Date.prototype.Format = function (fmt) {
         var o = {
             "M+": this.getMonth() + 1, //月份
@@ -84,218 +86,80 @@
             if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
         return fmt;
     }
-
-    var pageCode = 1;
-    var totalRecord = null;
-    var totalPage = null;
-    var pageSize = null;
+    var pageCode = ${pageBean.pageCode};
+    var totalPage = ${pageBean.totalPage};
+    var ulValue = '';
     var begin = null;
     var end = null;
-    var tableValue = '';
-    var ulValue = '';
-    var startDate = null;
-    var endDate = null;
-    var query = null;
+    function pageFoot() {
+        ulValue += '<ul data-am-widget="pagination" class="am-pagination am-pagination-default">';
+        ulValue += '<li class="am-pagination-first">';
+        ulValue += '<a class="am-btn-xs" id="firstPage">首页</a>';
+        ulValue += '</li>';
 
-    function  submitQuery() {
-        startDate = document.getElementsByName("startDate")[0].value;
-        endDate = document.getElementsByName("endDate")[0].value;
-        query = document.getElementsByName("query")[0].value;
-
-        var urlValue = '<c:url value="/criticism/pageRecord"/>
-        $.ajax({
-            type:'POST',
-            url:urlValue,
-            success:function(pageBean) {
-                pageCode = pageBean.pageCode;
-                totalRecord = pageBean.totalRecord;
-                pageSize = pageBean.pageSize;
-
-                for(var i = 0; i < pageBean.list.length; i++) {
-                    tableValue += '<tr class="text-c">';
-                    tableValue += '<td>' + pageBean.list[i].uid + '</td>';
-                    tableValue += '<td>' + pageBean.list[i].comment + '</td>';
-                    tableValue += '<td>' + new Date(pageBean.list[i].date).Format("yyyy-MM-dd") + '</td>';
-                    tableValue += '</tr>';
-                }
-
-                document.getElementById("tbodyId").innerHTML = tableValue;
-                tableValue = '';
-
-                ulValue += '<ul data-am-widget="pagination" class="am-pagination am-pagination-default">';
-                ulValue += '<li class="am-pagination-first">';
-                ulValue += '<a class="am-btn-xs" id="firstPage">首页</a>';
-                ulValue += '</li>';
-
-                if(pageCode > 1) {
-                    ulValue += '<li class="am-pagination-prev">';
-                    ulValue += '<a class="am-btn-xs" id="upPage">上一页</a>';
-                    ulValue += '</li>';
-                }
-
-
-                if(totalPage <= 10) {
-                    begin = 1;
-                    end = totalPage;
-                } else {
-                    begin = pageCode - 5;
-                    end = pageCode + 4;
-                }
-
-                if(begin < 1) {
-                    begin = 1;
-                    end = 10;
-                }
-
-                if(end > totalPage) {
-                    begin = totalPage - 9;
-                    end = totalPage;
-                }
-
-                for(var i = begin; i <= end; i++) {
-                    ulValue += '<li>';
-                    ulValue += '<a class="am-btn-xs" id="newPage_' + i + '" onclick="javascript:pageData(' + i + ');">' + i + '</a>';
-                    ulValue += '</li>';
-                }
-
-                if(pageCode < totalPage) {
-                    ulValue += '<li class="am-pagination-next">';
-                    ulValue += '<a class="am-btn-xs" id="downPage">下一页</a>';
-                    ulValue += '</li>';
-                }
-
-                ulValue += '<li class="am-pagination-last am-btn-xs">';
-                ulValue += '<a class="am-btn-xs" id="endPage">尾页</a>';
-                ulValue += '</li>';
-                ulValue += '</ul>';
-
-                document.getElementById("ulId").innerHTML = ulValue;
-
-                bindAtion();
-
-                ulValue = '';
-
-                document.getElementById("spanId-1").innerHTML = pageCode;
-                document.getElementById("spanId-2").innerHTML = totalPage;
-            },
-            error:function() {
-                alert("加载失败");
-            }
-        });
-    }
-
-    function pageData(param) {
-        /*if(param == null) {
-            urlValue = '<c:url value="/query/queryAllinputData"/>';
-        } else {
-            urlValue = '<c:url value="/query/queryAllinputData"/>?pageCode=' + param;
-        }*/
-
-        if(param == null) {
-            var dataValue = 'pageCode=1' + '&startDate='+ startDate + '&endDate=' + endDate + '&query=' + query;
-
-
-        } else {
-            var dataValue = 'pageCode=' + param + '&startDate='+ startDate + '&endDate=' + endDate + '&query=' + query;
+        if(pageCode > 1) {
+            ulValue += '<li class="am-pagination-prev">';
+            ulValue += '<a class="am-btn-xs" id="upPage">上一页</a>';
+            ulValue += '</li>';
         }
 
-        $.ajax({
-            type:'POST',
-            url:'<c:url value="/query/queryAllinputData"/>',
-            data:dataValue,
-            success:function(pageBean) {
-                pageCode = pageBean.pageCode;
-                totalPage = pageBean.totalPage;
-                totalRecord = pageBean.totalRecord;
-                pageSize = pageBean.pageSize;
 
-                for(var i = 0; i < pageBean.list.length; i++) {
-                    tableValue += '<tr class="text-c">';
-                    tableValue += '<td>' + pageBean.list[i].number + '</td>';
-                    tableValue += '<td>' + pageBean.list[i].name + '</td>';
-                    tableValue += '<td>' + new Date(pageBean.list[i].date).Format("yyyy-MM-dd") + '</td>';
-                    tableValue += '</tr>';
-                }
+        if(totalPage <= 10) {
+            begin = 1;
+            end = totalPage;
+        } else {
+            begin = pageCode - 5;
+            end = pageCode + 4;
+        }
 
-                document.getElementById("tbodyId").innerHTML = tableValue;
-                tableValue = '';
+        if(begin < 1) {
+            begin = 1;
+            end = 10;
+        }
 
-                ulValue += '<ul data-am-widget="pagination" class="am-pagination am-pagination-default">';
-                ulValue += '<li class="am-pagination-first">';
-                ulValue += '<a class="am-btn-xs" id="firstPage">首页</a>';
-                ulValue += '</li>';
+        if(end > totalPage) {
+            begin = totalPage - 9;
+            end = totalPage;
+        }
 
-                if(pageCode > 1) {
-                    ulValue += '<li class="am-pagination-prev">';
-                    ulValue += '<a class="am-btn-xs" id="upPage">上一页</a>';
-                    ulValue += '</li>';
-                }
+        for(var i = begin; i <= end; i++) {
+            ulValue += '<li>';
+            var st = "<c:url value="/criticism/pageRecord"/>?pageCode="+ i;
+            ulValue += '<a class="am-btn-xs" id="newPage_' + i + '" href="<c:url value="/criticism/pageRecord"/>?pageCode='+i+'">'+i+'</a>';
+            ulValue += '</li>';
+        }
 
+        if(pageCode < totalPage) {
+            ulValue += '<li class="am-pagination-next">';
+            ulValue += '<a class="am-btn-xs" id="downPage">下一页</a>';
+            ulValue += '</li>';
+        }
 
-                if(totalPage <= 10) {
-                    begin = 1;
-                    end = totalPage;
-                } else {
-                    begin = pageCode - 5;
-                    end = pageCode + 4;
-                }
+        ulValue += '<li class="am-pagination-last am-btn-xs">';
+        ulValue += '<a class="am-btn-xs" id="endPage">尾页</a>';
+        ulValue += '</li>';
+        ulValue += '</ul>';
 
-                if(begin < 1) {
-                    begin = 1;
-                    end = 10;
-                }
+        document.getElementById("ulId").innerHTML = ulValue;
 
-                if(end > totalPage) {
-                    begin = totalPage - 9;
-                    end = totalPage;
-                }
+        bindAtion();
 
-                for(var i = begin; i <= end; i++) {
-                    ulValue += '<li>';
-                    ulValue += '<a class="am-btn-xs" id="newPage_' + i + '" onclick="javascript:pageData(' + i + ');">' + i + '</a>';
-                    ulValue += '</li>';
-                }
+        ulValue = '';
 
-                if(pageCode < totalPage) {
-                    ulValue += '<li class="am-pagination-next">';
-                    ulValue += '<a class="am-btn-xs" id="downPage">下一页</a>';
-                    ulValue += '</li>';
-                }
-
-                ulValue += '<li class="am-pagination-last am-btn-xs">';
-                ulValue += '<a class="am-btn-xs" id="endPage">尾页</a>';
-                ulValue += '</li>';
-                ulValue += '</ul>';
-
-                document.getElementById("ulId").innerHTML = ulValue;
-
-                bindAtion();
-
-                ulValue = '';
-
-                document.getElementById("spanId-1").innerHTML = pageCode;
-                document.getElementById("spanId-2").innerHTML = totalPage;
-            },
-            error:function() {
-                alert("数据加载错误");
-            }
-        });
-        return pageCode, totalPage, totalRecord, pageSize;
+        document.getElementById("spanId-1").innerHTML = pageCode;
+        document.getElementById("spanId-2").innerHTML = totalPage;
     }
-
-    //pageData();
-    submitQuery();
-
-    //绑定事件
+    pageFoot();
     function bindAtion() {
         //'首页'事件
         $("#firstPage").bind("click", function() {
-            pageData(1);
+            window.location.href = '<c:url value="/criticism/pageRecord"/>?pageCode=1'
         });
 
         //'上一页'事件
         $("#upPage").bind("click", function() {
-            pageData(--pageCode);
+            var st = "<c:url value="/criticism/pageRecord"/>?pageCode="+ --pageCode;
+            window.location.href = st
         });
 
         //'页码跳转'事件--->
@@ -303,23 +167,17 @@
 
         //'下一页'事件
         $("#downPage").bind("click", function() {
-            pageData(++pageCode);
+            var st = "<c:url value="/criticism/pageRecord"/>?pageCode="+ ++pageCode;
+            window.location.href = st
         });
 
         //'尾页'事件
         $("#endPage").bind("click", function() {
-            pageData(totalPage);
+            var st = "<c:url value="/criticism/pageRecord"/>?pageCode="+ totalPage;
+            window.location.href = st
         });
 
     }
-
-
-    function printf() {
-        alert("1"+"--->"+pageCode+"---"+totalPage+"---"+totalRecord+"---"+pageSize);
-    }
-
-
-
 </script>
 </body>
 </html>
