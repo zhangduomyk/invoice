@@ -53,7 +53,7 @@ public class CriticismController {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("pageBean", pageBean);
-        modelAndView.setViewName("jsps/criticism/criticism-list.jsp");
+        modelAndView.setViewName("/jsps/criticism/cri-list.jsp");
 
         return modelAndView;
     }
