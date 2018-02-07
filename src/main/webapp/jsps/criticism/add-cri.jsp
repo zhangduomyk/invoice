@@ -43,6 +43,8 @@
                     String str_date2 = str_date1.toString();//将Date型日期时间转换成字符串形式
                 %>
                 <big><%=str_date2 %></big>
+                <input type="hidden" name="uid" value="${roleID}">
+                <input type="hidden" name="date" value="currentTime">
             </div>
         </div>
         <div class="row cl">

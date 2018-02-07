@@ -33,7 +33,7 @@ public interface UserService {
 	
 	/**
 	 * 发送验证码
-	 * @param to
+	 * @param
 	 * @throws Exception
 	 */
 	public abstract void sendEmail(UserCustom userCustom) throws Exception;

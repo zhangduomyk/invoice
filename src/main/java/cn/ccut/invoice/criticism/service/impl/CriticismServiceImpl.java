@@ -1,7 +1,6 @@
 package cn.ccut.invoice.criticism.service.impl;
 
 import cn.ccut.invoice.criticism.dao.CriticismMapperCustom;
-import cn.ccut.invoice.criticism.model.Criticism;
 import cn.ccut.invoice.criticism.model.CriticismCustom;
 import cn.ccut.invoice.criticism.model.PageBean;
 import cn.ccut.invoice.criticism.service.CriticismService;
@@ -19,11 +18,11 @@ public class CriticismServiceImpl implements CriticismService {
     /**
      * 添加单条评论
      *
-     * @param criticism
+     * @param criticismCustom
      * @throws Exception
      */
-    public void insertOneRecord(Criticism criticism) throws Exception {
-        criticismMapperCustom.insertSelective(criticism);
+    public void insertOneRecord(CriticismCustom criticismCustom) throws Exception {
+        criticismMapperCustom.insertSelective(criticismCustom);
     }
 
     /**

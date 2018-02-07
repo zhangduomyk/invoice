@@ -1,6 +1,6 @@
 package cn.ccut.invoice.criticism.service;
 
-import cn.ccut.invoice.criticism.model.Criticism;
+import cn.ccut.invoice.criticism.model.CriticismCustom;
 import cn.ccut.invoice.criticism.model.PageBean;
 
 public interface CriticismService {
@@ -8,10 +8,10 @@ public interface CriticismService {
     /**
      * 添加单条评论
      *
-     * @param criticism
+     * @param criticismCustom
      * @throws Exception
      */
-    public void insertOneRecord(Criticism criticism) throws Exception;
+    public void insertOneRecord(CriticismCustom criticismCustom) throws Exception;
 
     /**
      * 查询所有评论

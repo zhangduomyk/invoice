@@ -69,7 +69,6 @@ public class CriticismController {
         try {
             criticismService.insertOneRecord(criticismCustom);
         } catch (Exception e) {
-
             return "添加失败！";
         }
         return "添加成功";
