@@ -94,7 +94,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<dd>
 				<ul>
 					<li><a data-href="<c:url value="/criticism/pageRecord"/>" data-title="评论列表" href="javascript:void(0)">评论列表</a></li>
-					<li><a data-href="feedback-list.html" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
+					<li><a data-href="<c:url value="/jsps/criticism/add-opinion.jsp"/>" data-title="意见反馈" href="javascript:void(0)">意见反馈</a></li>
 			</ul>
 		</dd>
 	</dl>

@@ -10,7 +10,7 @@
     <!--中文：http://mbg.cndocs.tk/-->
 
     <!--步骤1：添加你本地的驱动jar（低版本）-->
-    <classPathEntry location="E:\\~06_环境配置\\jar包\\MySQL驱动\\mysql-connector-java-5.1.7-bin.jar"/>
+    <classPathEntry location="D:\\commons\\mysql-connector-java-5.1.11-bin.jar"/>
 
     <context id="MysqlTables" targetRuntime="MyBatis3">
 
@@ -27,35 +27,35 @@
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
                 connectionURL="jdbc:mysql://localhost:3306/invoice"
-                userId="root" password="root"/>
+                userId="root" password="123"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
         <!--步骤3：要生成的 model 模块位置-->
-        <javaModelGenerator targetPackage="cn.ccut.invoice.loginlog.model"
-                            targetProject="D:\idealU\workspace\invoice\src\main\java">
+        <javaModelGenerator targetPackage="cn.ccut.invoice.opinion.model"
+                            targetProject="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!--步骤4：要生成的 Mapper.xml 文件位置-->
-        <sqlMapGenerator targetPackage="cn.ccut.invoice.loginlog.dao"
-                         targetProject="D:\idealU\workspace\invoice\src\main\java">
+        <sqlMapGenerator targetPackage="cn.ccut.invoice.opinion.dao"
+                         targetProject="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!--步骤5：要生成的 Mapper 接口类-->
-        <javaClientGenerator targetPackage="cn.ccut.invoice.loginlog.dao"
-                             targetProject="D:\idealU\workspace\invoice\src\main\java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="cn.ccut.invoice.opinion.dao"
+                             targetProject="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
 
         <!--步骤6：要根据哪张表生成，要在这里配置-->
         <!--用百分号表示生成所有表,可以直接省去一个一个写 <table tableName="%" /> -->
-        <table tableName="log" domainObjectName="Log" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="opinion" domainObjectName="Opinion" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>
 

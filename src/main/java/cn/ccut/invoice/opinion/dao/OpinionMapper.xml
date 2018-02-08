@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.ccut.invoice.opinion.dao.OpinionMapper" >
+  <resultMap id="BaseResultMap" type="cn.ccut.invoice.opinion.model.Opinion" >
+    <id column="oid" property="oid" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="cn.ccut.invoice.opinion.model.Opinion" extends="BaseResultMap" >
+    <result column="opinions" property="opinions" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    oid, uid
+  </sql>
+  <sql id="Blob_Column_List" >
+    opinions
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from opinion
+    where oid = #{oid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from opinion
+    where oid = #{oid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.ccut.invoice.opinion.model.Opinion" >
+    insert into opinion (oid, uid, opinions
+      )
+    values (#{oid,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{opinions,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.ccut.invoice.opinion.model.Opinion" >
+    insert into opinion
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="oid != null" >
+        oid,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="opinions != null" >
+        opinions,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="oid != null" >
+        #{oid,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="opinions != null" >
+        #{opinions,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.ccut.invoice.opinion.model.Opinion" >
+    update opinion
+    <set >
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="opinions != null" >
+        opinions = #{opinions,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where oid = #{oid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.ccut.invoice.opinion.model.Opinion" >
+    update opinion
+    set uid = #{uid,jdbcType=INTEGER},
+      opinions = #{opinions,jdbcType=LONGVARCHAR}
+    where oid = #{oid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.ccut.invoice.opinion.model.Opinion" >
+    update opinion
+    set uid = #{uid,jdbcType=INTEGER}
+    where oid = #{oid,jdbcType=INTEGER}
+  </update>
+</mapper>
