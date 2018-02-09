@@ -7,11 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a554828-0432-496c-8373-f6e7628539fa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/criticism/opi-list.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/converter/AddedTaxDateConverter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTax.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/PageBean.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/AddedTaxService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/impl/AddedTaxServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatisticsdetail.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsps/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/admin.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/invoice/jsps/admin.jsp" afterPath="$PROJECT_DIR$/target/invoice/jsps/admin.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/invoice/jsps/index.jsp" afterPath="$PROJECT_DIR$/target/invoice/jsps/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="taxstatistics.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="-3003">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,48 +89,28 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="171" column="32" lean-forward="false" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="92" column="67" lean-forward="false" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpinionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/opinion/controller/OpinionController.java">
+      <file leaf-file-name="AddedTaxController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="138">
+              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="opi-list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/criticism/opi-list.jsp">
+      <file leaf-file-name="CustomException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3726">
-              <caret line="162" column="81" lean-forward="true" selection-start-line="162" selection-start-column="81" selection-end-line="162" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cri-list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/criticism/cri-list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+            <state relative-caret-position="113">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -207,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/jsps/systemmanagement/prem.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/systemmanagement/prempage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/systemmanagement/controller/AdminManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/systemmanagement/service/AdminManagementService.java" />
@@ -252,12 +244,13 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/opinion/service/impl/OpinionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/opinion/model/PageBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/criticism/controller/CriticismController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/criticism/add-opinion.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/opinion/controller/OpinionController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/succes/addopi-succes.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/criticism/opi-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" />
       </list>
     </option>
   </component>
@@ -309,9 +302,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1102" />
-    <option name="height" value="580" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -385,15 +378,6 @@
               <item name="invoice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="invoice" type="462c0819:PsiDirectoryNode" />
-              <item name="opinion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,7 +395,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="criticism" type="462c0819:PsiDirectoryNode" />
+              <item name="addedtax" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -432,7 +416,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="D:/commons/itcast-tools-1.4.2.jar!/" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/workspace-two" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -442,27 +426,27 @@
       <recent name="cn.ccut.invoice.criticism.controller" />
       <recent name="cn.ccut.invoice.user.dao" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\java\cn\ccut\invoice" />
-      <recent name="D:\idealU\workspace\invoice\src\main\webapp\static\echarts" />
-      <recent name="D:\idealU\workspace\invoice\src\main\webapp\jsps\userdistribution" />
-      <recent name="D:\idealU\workspace\invoice\src\main\webapp\jsps\loginlog" />
-      <recent name="D:\idealU\workspace\invoice\src\main\java\cn\ccut\invoice\loginlog\dao" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.ccut.invoice.opinion.model" />
-      <recent name="cn.ccut.invoice.loginlog.model" />
-      <recent name="cn.ccut.invoice.loginlog.dao" />
-      <recent name="cn.ccut.invoice.systemmanagement.dao" />
-      <recent name="cn.ccut.invoice.systemmanagement.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\idealU\workspace\invoice\src\main\webapp\jsps\statistics" />
       <recent name="D:\idealU\workspace\invoice\src\main\webapp\static\echarts" />
       <recent name="D:\idealU\workspace\invoice\src\main\webapp\static\h-ui\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.ccut.invoice.exception" />
+      <recent name="cn.ccut.invoice.opinion.model" />
+      <recent name="cn.ccut.invoice.loginlog.model" />
+      <recent name="cn.ccut.invoice.loginlog.dao" />
+      <recent name="cn.ccut.invoice.systemmanagement.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\webapp\jsps" />
+      <recent name="D:\IntelliJ IDEA 2017.3.2\workspace\invoice\src\main\java\cn\ccut\invoice" />
+      <recent name="D:\idealU\workspace\invoice\src\main\webapp\static\echarts" />
+      <recent name="D:\idealU\workspace\invoice\src\main\webapp\jsps\userdistribution" />
+      <recent name="D:\idealU\workspace\invoice\src\main\webapp\jsps\loginlog" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -780,7 +764,7 @@
       <workItem from="1517976368368" duration="29487000" />
       <workItem from="1518079189900" duration="4508000" />
       <workItem from="1518084411644" duration="3111000" />
-      <workItem from="1518149606129" duration="3207000" />
+      <workItem from="1518149606129" duration="6202000" />
     </task>
     <task id="LOCAL-00001" summary="My second conmmit">
       <created>1516096110587</created>
@@ -887,7 +871,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518087641579</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="opinion框架-complate">
+      <created>1518163117403</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1518163117404</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -923,7 +914,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="496411000" />
+    <option name="totallyTimeSpent" value="499406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,7 +938,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38641685" sideWeight="0.49195278" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38641685" sideWeight="0.49195278" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266979" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -955,10 +946,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3208431" sideWeight="0.49546143" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3407494" sideWeight="0.48819742" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3407494" sideWeight="0.48819742" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4831261" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4831261" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19206008" sideWeight="0.5168739" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23524962" sideWeight="0.5111492" order="6" side_tool="true" content_ui="tabs" />
@@ -1016,7 +1007,8 @@
     <MESSAGE value="criticism框架" />
     <MESSAGE value="criticism框架-2" />
     <MESSAGE value="opinion框架-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="opinion框架-1" />
+    <MESSAGE value="opinion框架-complate" />
+    <option name="LAST_COMMIT_MESSAGE" value="opinion框架-complate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1032,92 +1024,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/dataquery/inputdataquery.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="276" column="133" lean-forward="true" selection-start-line="276" selection-start-column="133" selection-end-line="276" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui/js/H-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="4679" column="47" lean-forward="true" selection-start-line="4679" selection-start-column="47" selection-end-line="4679" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="15088" column="17" lean-forward="false" selection-start-line="15088" selection-start-column="17" selection-end-line="15088" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layer/2.4/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1" column="12351" lean-forward="false" selection-start-line="1" selection-start-column="12351" selection-end-line="1" selection-end-column="12351" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/indata/batch_data.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/indata/data.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="36" column="86" lean-forward="true" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/user/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/welcome/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/criticism/model/CriticismCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/criticism/model/Criticism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/email.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/database.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1400,14 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="171" column="32" lean-forward="false" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/criticism/cri-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1427,15 +1325,119 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/opinion/controller/OpinionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/criticism/opi-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3726">
-          <caret line="162" column="81" lean-forward="true" selection-start-line="162" selection-start-column="81" selection-end-line="162" selection-end-column="81" />
+        <state relative-caret-position="-3325">
+          <caret line="12" column="109" lean-forward="true" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/impl/AddedTaxServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/converter/AddedTaxDateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/AddedTaxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3003">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
