@@ -90,6 +90,7 @@
             <dd>
                 <ul>
                     <li><a data-href="<c:url value="/log/logList"/>" data-title="登录日志" href="javascript:void(0)">登录日志</a></li>
+                    <li><a data-href="<c:url value="/opinion/pageRecord"/>" data-title="用户反馈" href="javascript:void(0)">用户反馈</a></li>
                 </ul>
             </dd>
         </dl>
