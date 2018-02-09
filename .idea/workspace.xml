@@ -7,24 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a554828-0432-496c-8373-f6e7628539fa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/converter/AddedTaxDateConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTax.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/PageBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/AddedTaxService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/impl/AddedTaxServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatisticsdetail.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/invoice/jsps/index.jsp" afterPath="$PROJECT_DIR$/target/invoice/jsps/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-service.xml" />
+      <change beforePath="$PROJECT_DIR$/target/invoice/WEB-INF/classes/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/target/invoice/WEB-INF/classes/spring/applicationContext-service.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,41 +62,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="taxstatistics.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp">
+      <file leaf-file-name="AddedTaxMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3003">
+            <state relative-caret-position="92">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddedTaxMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+              <folding>
+                <marker date="1518163776521" expanded="true" signature="1020:1125" ph="select from invoice" />
+                <marker date="1518163776521" expanded="true" signature="1212:1271" ph="delete from invoice... " />
+                <marker date="1518163776521" expanded="true" signature="1368:1688" ph="insert into invoice... " />
+                <marker date="1518163776521" expanded="true" signature="3174:3858" ph="update invoice... " />
+                <marker date="1518163776521" expanded="true" signature="3967:4301" ph="update invoice... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddedTaxMapperCustom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+              <folding>
+                <marker date="1518163776523" expanded="true" signature="678:721" ph="SELECT invoi... invoice" />
+                <marker date="1518163776523" expanded="true" signature="909:1015" ph="SELECT COUNT... invoice" />
+                <marker date="1518163776523" expanded="true" signature="1138:1271" ph="SELECT * FRO... invoice" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddedTaxCustom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddedTaxQueryVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/MyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-828">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/index.jsp">
+      <file leaf-file-name="applicationContext-service.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="340">
+              <caret line="20" column="98" lean-forward="false" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddedTaxController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java">
+      <file leaf-file-name="AddedTaxMapperCustom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="253">
+              <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -200,9 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/jsps/systemmanagement/prempage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/systemmanagement/controller/AdminManagementController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/systemmanagement/service/AdminManagementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/loginlog/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/loginlog/model/LogCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/loginlog/filter/Test.java" />
@@ -249,8 +302,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/succes/addopi-succes.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/criticism/opi-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsps/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" />
       </list>
     </option>
   </component>
@@ -372,6 +428,59 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="invoice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="invoice" type="b2602c69:ProjectViewProjectNode" />
@@ -611,6 +720,7 @@
       <listeners />
     </configuration>
     <configuration name="invoice" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -764,7 +874,7 @@
       <workItem from="1517976368368" duration="29487000" />
       <workItem from="1518079189900" duration="4508000" />
       <workItem from="1518084411644" duration="3111000" />
-      <workItem from="1518149606129" duration="6202000" />
+      <workItem from="1518149606129" duration="9842000" />
     </task>
     <task id="LOCAL-00001" summary="My second conmmit">
       <created>1516096110587</created>
@@ -878,7 +988,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518163117404</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="all complate">
+      <created>1518167090890</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1518167090890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -914,7 +1031,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499406000" />
+    <option name="totallyTimeSpent" value="503046000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,7 +1046,7 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38641685" sideWeight="0.5080472" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3407494" sideWeight="0.51180255" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.295764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -938,7 +1055,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38641685" sideWeight="0.49195278" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38641685" sideWeight="0.49195278" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266979" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -946,10 +1063,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3208431" sideWeight="0.49546143" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3407494" sideWeight="0.48819742" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3407494" sideWeight="0.48819742" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4831261" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.4831261" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19206008" sideWeight="0.5168739" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23524962" sideWeight="0.5111492" order="6" side_tool="true" content_ui="tabs" />
@@ -1008,14 +1125,15 @@
     <MESSAGE value="criticism框架-2" />
     <MESSAGE value="opinion框架-1" />
     <MESSAGE value="opinion框架-complate" />
-    <option name="LAST_COMMIT_MESSAGE" value="opinion框架-complate" />
+    <MESSAGE value="all complate" />
+    <option name="LAST_COMMIT_MESSAGE" value="all complate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="106" />
+      <option name="time" value="112" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1024,50 +1142,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/user/controller/UserLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="98" column="62" lean-forward="true" selection-start-line="98" selection-start-column="62" selection-end-line="98" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/criticism/dao/CriticismMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/user/controller/UserRegistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/indata/controller/InvoiceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3036">
@@ -1338,39 +1412,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/impl/AddedTaxServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/converter/AddedTaxDateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1386,38 +1428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/AddedTaxService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3003">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1426,18 +1436,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsps/addedtax/taxstatistics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="137" column="98" lean-forward="false" selection-start-line="137" selection-start-column="98" selection-end-line="137" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/impl/AddedTaxServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="14" column="86" lean-forward="false" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+          <folding>
+            <marker date="1518166839885" expanded="true" signature="678:721" ph="SELECT invoi... invoice" />
+            <marker date="1518166839885" expanded="true" signature="909:1015" ph="SELECT COUNT... invoice" />
+            <marker date="1518166839885" expanded="true" signature="1138:1271" ph="SELECT * FRO... invoice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/controller/AddedTaxController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/service/AddedTaxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <folding>
+            <marker date="1518163776521" expanded="true" signature="1020:1125" ph="select from invoice" />
+            <marker date="1518163776521" expanded="true" signature="1212:1271" ph="delete from invoice... " />
+            <marker date="1518163776521" expanded="true" signature="1368:1688" ph="insert into invoice... " />
+            <marker date="1518163776521" expanded="true" signature="3174:3858" ph="update invoice... " />
+            <marker date="1518163776521" expanded="true" signature="3967:4301" ph="update invoice... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/dao/AddedTaxMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+          <folding>
+            <marker date="1518163776523" expanded="true" signature="678:721" ph="SELECT invoi... invoice" />
+            <marker date="1518163776523" expanded="true" signature="909:1015" ph="SELECT COUNT... invoice" />
+            <marker date="1518163776523" expanded="true" signature="1138:1271" ph="SELECT * FRO... invoice" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/addedtax/model/AddedTaxQueryVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/ccut/invoice/exception/CustomException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="166">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="98" lean-forward="false" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
           <folding />
         </state>
       </provider>
